@@ -40,6 +40,10 @@
     .editIcon {
         font-size: 20px;
     }
+
+    .editIcon:hover {
+        color: #42b983;
+    }
     .rank {
         width: 40px;
     }

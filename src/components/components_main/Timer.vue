@@ -58,8 +58,8 @@
             let cleaningMinutes = now.getMinutes();
             let cleaningSeconds = now.getSeconds() + 10;
             cleanTime.setHours(cleaningHour, cleaningMinutes, cleaningSeconds);
-            tenMinBeforeCleanTime.setHours(cleaningHour, cleaningMinutes, cleaningSeconds);
-            endCleaningTime.setHours(cleaningHour, cleaningMinutes, cleaningSeconds);
+            tenMinBeforeCleanTime.setHours(cleaningHour, cleaningMinutes, cleaningSeconds - 5);
+            endCleaningTime.setHours(cleaningHour, cleaningMinutes, cleaningSeconds + 5);
 
             return {
                 tenMinRemaining: false,

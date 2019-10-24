@@ -1,6 +1,6 @@
 <template>
     <div id="footer">
-        <p class="roomCode"> Code: {{user.roomId}} <i class="el-icon-document-copy"></i></p>
+        <p class="roomCode"> Code: {{user.roomId}} <i class="el-icon-document-copy roomCodeCopy"></i></p>
         <div class="buttonContainer">
             <el-button class="button" type="success" v-on:click="cleanerList">인원현황</el-button>
             <el-button class="button" type="primary" v-on:click="editAreas">구역편집</el-button>
@@ -36,6 +36,10 @@
         margin-left: 2%;
         line-height: 40px;
 
+    }
+
+    .roomCodeCopy:hover {
+        color: #42b983;
     }
 
     .buttonContainer {
