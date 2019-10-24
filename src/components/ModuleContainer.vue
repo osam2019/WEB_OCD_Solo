@@ -115,7 +115,6 @@
                 this.onlyTenMinutes = false;
             },
             setArea(value) {
-                alert("value: " + value);
                 this.user.todaysArea = value;
                 for(let i = 0 ; i < this.userList.length; i++) {
                     if(this.user.userId === this.userList[i].userId) {

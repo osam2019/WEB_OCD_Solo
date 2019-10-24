@@ -1,7 +1,7 @@
 <template>
 
     <div id="checkUser">
-        <el-input class="form inputText" type="text" placeholder="확인하고 싶은 소대 방 코드입력!"></el-input>
+        <el-input class="form inputText" type="text" placeholder="확인하고 싶은 소대 방 코드입력!" v-model="roomCode"></el-input>
         <el-button class="form button" type="success" v-on:click="check()">확 인!</el-button>
         <el-button class="form button" type="danger" v-on:click="cancel()">취 소</el-button>
     </div>
@@ -11,9 +11,14 @@
 
     export default {
         name: "CheckUser",
+        data() {
+            return {
+                roomCode: ''
+            }
+        },
         methods: {
             check() {
-
+                this.$router.push({name:'CleanerList'});
             },
             cancel() {
                 this.$router.go(-1);
