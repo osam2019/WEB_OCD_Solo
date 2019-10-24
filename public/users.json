@@ -1,0 +1,66 @@
+[
+  {
+    "userId": "18-760725892",
+    "userName": "안희준",
+    "rank": 4,
+    "password": "1234",
+    "isAdmin": false,
+    "roomId": "c1231de2"
+  },
+  {
+    "userId": "18-76072585",
+    "userName": "서동성",
+    "rank": 3,
+    "password": "1234",
+    "isAdmin": false,
+    "roomId": "c1231de2"
+  },
+  {
+    "userId": "18-76072586",
+    "userName": "박건우",
+    "rank": 3,
+    "password": "1234",
+    "isAdmin": false,
+    "roomId": "c1231de2"
+  },
+  {
+    "userId": "18-76072587",
+    "userName": "한태원",
+    "rank": 3,
+    "password": "1234",
+    "isAdmin": false,
+    "roomId": "c1231de2"
+  },
+  {
+    "userId": "18-76072588",
+    "userName": "이조원",
+    "rank": 2,
+    "password": "1234",
+    "isAdmin": true,
+    "roomId": "c1231de2"
+  },
+  {
+    "userId": "18-76072589",
+    "userName": "강예준",
+    "rank": 2,
+    "password": "1234",
+    "isAdmin": false,
+    "roomId": "c1231de2"
+  },
+  {
+    "userId": "18-76072590",
+    "userName": "윤제현",
+    "rank": 2,
+    "password": "1234",
+    "isAdmin": false,
+    "roomId": "c1231de2"
+  },
+  {
+    "userId": "18-76072591",
+    "userName": "송준호",
+    "rank": 2,
+    "password": "1234",
+    "isAdmin": false,
+    "roomId": "c1231de2"
+  }
+]
