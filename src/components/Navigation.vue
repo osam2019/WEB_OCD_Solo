@@ -1,15 +1,13 @@
 <template>
-  <div>
-    <h2>{{rank}} {{userName}}</h2>
-    <nav>
-      <router-link class="spacing"
-                   tag="li"
-                   v-for="routes in links"
-                   v-bind:key="routes.id"
-                   :to="`${routes.page}`">{{routes.text}}</router-link>
-
-    </nav>
-  </div>
+    <div id="navigation">
+        <div id="name">
+            <div class="name"><img class="rank" :src="user.rank + '.png'"/> {{user.userName}} <i class="el-icon-edit editIcon"></i></div>
+            <el-button class="logout" type="danger" v-on:click="logout()">Log Out</el-button>
+        </div>
+        <!--        <nav id="nav">-->
+        <!--            <router-link class="spacing" to="/Login">로그아웃</router-link>-->
+        <!--        </nav>-->
+    </div>
 </template>
 
 <script>
@@ -17,33 +15,40 @@
         name: "Navigation",
         data() {
             return {
-                userName: "서동성",
-                rank: 3,
-                links: [
-                    {
-                        id: 1,
-                        text: 'Main',
-                        page: '/Main'
-                    },
-                    {
-                        id: 2,
-                        text: 'AddRoom',
-                        page: '/AddRoom'
-                    },
-                    {
-                        id: 3,
-                        text: 'Login',
-                        page: '/Login'
-                    }
-                ]
+            }
+        },
+        props: ["user"],
+        methods: {
+            logout() {
+                this.$router.push("/login");
             }
         }
     }
 </script>
 
 <style scoped>
-  .spacing {
-    Margin-right: 10px;
-  }
+    #name {
+        text-align: center;
+        font-size: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
 
+    #navigation {
+        width: 100%;
+    }
+    .editIcon {
+        font-size: 20px;
+    }
+    .rank {
+        width: 40px;
+    }
+
+    .name {
+        margin-left: 3%;
+    }
+
+    .logout {
+        margin-right: 2%;
+    }
 </style>

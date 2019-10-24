@@ -2,44 +2,44 @@
   "roomId": "c1231de2",
   "initialOutput": [
     {
-      "userId": "18-76072585",
-      "userName": "서동성",
-      "isPresent": true
-    },
-    {
-      "userId": "18-76072586",
-      "userName": "박건우",
-      "isPresent": true
-    },
-    {
-      "userId": "18-76072587",
-      "userName": "한태원",
-      "isPresent": false
-    },
-    {
-      "userId": "18-76072588",
-      "userName": "이조원",
-      "isPresent": false
-    },
-    {
-      "userId": "18-76072589",
-      "userName": "강예준",
-      "isPresent": true
-    },
-    {
-      "userId": "18-76072590",
-      "userName": "윤제현",
-      "isPresent": true
-    },
-    {
-      "userId": "18-76072591",
-      "userName": "송준호",
-      "isPresent": true
-    },
-    {
-      "userId": "18-760725892",
+      "userId": "1",
       "userName": "안희준",
-      "isPresent": true
+      "area": ""
+    },
+    {
+      "userId": "2",
+      "userName": "서동성",
+      "area": ""
+    },
+    {
+      "userId": "3",
+      "userName": "박건우",
+      "area": ""
+    },
+    {
+      "userId": "4",
+      "userName": "한태원",
+      "area": "당직근무"
+    },
+    {
+      "userId": "5",
+      "userName": "이조원",
+      "area": "출타"
+    },
+    {
+      "userId": "6",
+      "userName": "강예준",
+      "area": ""
+    },
+    {
+      "userId": "7",
+      "userName": "윤제현",
+      "area": ""
+    },
+    {
+      "userId": "8",
+      "userName": "송준호",
+      "area": ""
     }
   ]
 }

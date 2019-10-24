@@ -2,26 +2,31 @@
   {
     "id": "0",
     "areaName": "생활관",
+    "included": true,
     "max": 3
   },
   {
     "id": "1",
     "areaName": "분리수거",
+    "included": true,
     "max": 3
   },
   {
     "id": "2",
     "areaName": "화장실",
+    "included": true,
     "max": 3
   },
   {
     "id": "3",
     "areaName": "세면장",
+    "included": false,
     "max": 3
   },
   {
     "id": "4",
     "areaName": "샤워실",
+    "included": false,
     "max": 3
   }
 ]

@@ -1,66 +1,82 @@
 [
   {
-    "userId": "18-760725892",
-    "userName": "안희준",
+    "userId": "1",
+    "userName": "안병장",
     "rank": 4,
     "password": "1234",
     "isAdmin": false,
-    "roomId": "c1231de2"
+    "roomId": "c1231de2",
+    "roomName": "특수전사령부 본부대!",
+    "todaysArea": "화장실"
   },
   {
-    "userId": "18-76072585",
-    "userName": "서동성",
+    "userId": "2",
+    "userName": "서상병",
     "rank": 3,
     "password": "1234",
     "isAdmin": false,
-    "roomId": "c1231de2"
+    "roomId": "c1231de2",
+    "roomName": "특수전사령부 본부대!",
+    "todaysArea": "분리수거"
   },
   {
-    "userId": "18-76072586",
-    "userName": "박건우",
+    "userId": "3",
+    "userName": "박상병",
     "rank": 3,
     "password": "1234",
     "isAdmin": false,
-    "roomId": "c1231de2"
+    "roomId": "c1231de2",
+    "roomName": "특수전사령부 본부대!",
+    "todaysArea": "생활관"
   },
   {
-    "userId": "18-76072587",
-    "userName": "한태원",
+    "userId": "4",
+    "userName": "한상병",
     "rank": 3,
     "password": "1234",
     "isAdmin": false,
-    "roomId": "c1231de2"
+    "roomId": "c1231de2",
+    "roomName": "특수전사령부 본부대!",
+    "todaysArea": "출타"
   },
   {
-    "userId": "18-76072588",
-    "userName": "이조원",
+    "userId": "5",
+    "userName": "이일병",
     "rank": 2,
     "password": "1234",
     "isAdmin": true,
-    "roomId": "c1231de2"
+    "roomId": "c1231de2",
+    "roomName": "특수전사령부 본부대!",
+    "todaysArea": "당직근무"
   },
   {
-    "userId": "18-76072589",
-    "userName": "강예준",
+    "userId": "6",
+    "userName": "강일병",
     "rank": 2,
     "password": "1234",
     "isAdmin": false,
-    "roomId": "c1231de2"
+    "roomId": "c1231de2",
+    "roomName": "특수전사령부 본부대!",
+    "todaysArea": "생활관"
   },
   {
-    "userId": "18-76072590",
-    "userName": "윤제현",
+    "userId": "7",
+    "userName": "윤일병",
     "rank": 2,
     "password": "1234",
     "isAdmin": false,
-    "roomId": "c1231de2"
+    "roomId": "c1231de2",
+    "roomName": "특수전사령부 본부대!",
+    "todaysArea": "화장실"
   },
   {
-    "userId": "18-76072591",
-    "userName": "송준호",
-    "rank": 2,
+    "userId": "8",
+    "userName": "송이병",
+    "rank": 1,
     "password": "1234",
     "isAdmin": false,
-    "roomId": "c1231de2"
+    "roomId": "c1231de2",
+    "roomName": "특수전사령부 본부대!",
+    "todaysArea": "화장실"
   }
 ]

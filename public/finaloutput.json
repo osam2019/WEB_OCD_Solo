@@ -2,44 +2,45 @@
   "roomId": "c1231de2",
   "finalOutput": [
     {
-      "userId": "18-76072585",
+      "userId": "1",
+      "userName": "안희준",
+      "area": "화장실"
+    },
+    {
+      "userId": "2",
       "userName": "서동성",
       "area": "화장실"
     },
     {
-      "userId": "18-76072586",
+      "userId": "3",
       "userName": "박건우",
       "area": "생활관"
     },
     {
-      "userId": "18-76072587",
+      "userId": "4",
       "userName": "한태원",
       "area": "당직근무"
     },
     {
-      "userId": "18-76072588",
+      "userId": "5",
       "userName": "이조원",
       "area": "출타"
     },
     {
-      "userId": "18-76072589",
+      "userId": "6",
       "userName": "강예준",
       "area": "화장실"
     },
     {
-      "userId": "18-76072590",
+      "userId": "7",
       "userName": "윤제현",
       "area": "생활관"
     },
     {
-      "userId": "18-76072591",
+      "userId": "8",
       "userName": "송준호",
       "area": "분리수거"
-    },
-    {
-      "userId": "18-760725892",
-      "userName": "안희준",
-      "area": "화장실"
     }
+
   ]
 }

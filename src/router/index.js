@@ -1,29 +1,65 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home'
+import Main from '../views/Main'
+import Login from '../views/Login'
+import AddRoom from '../views/AddRoom'
+import SignUp from '../views/SignUp'
+import AddTodo from '../components/AddTodo'
+import CheckUser from '../views/CheckUser'
+import EditAreas from '../views/EditAreas'
+import CleanerList from '../views/CleanerList'
 
 Vue.use(Router);
 
 const routes = [
     {
-        path: '/',
-        name: 'home',
-        component: Home
+        path: '/addtodo',
+        name: 'AddTodo',
+        component: AddTodo,
+        props: true,
     },
     {
-        path: '/about',
-        name: 'about',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+        path: '/main',
+        name: 'Main',
+        component: Main,
+        props: (route) => ({ query: route.query.q })
+    }, {
+        path: '/login',
+        name: 'Login',
+        component: Login,
+        props: true,
+    }, {
+        path: '/addroom',
+        name: 'AddRoom',
+        component: AddRoom,
+        props: true,
+    }, {
+        path: '/signup',
+        name: 'SignUp',
+        component: SignUp,
+        props: true,
+    }, {
+        path: '/checkuser',
+        name: 'CheckUser',
+        component: CheckUser,
+        props: true,
+    }, {
+        path: '/editareas',
+        name: 'EditAreas',
+        component: EditAreas,
+        props: true,
+    }, {
+        path: '/cleanerList',
+        name: 'CleanerList',
+        component: CleanerList,
+        props: (route) => ({ query: route.query.q })
     }
 ];
 
-const router = new Router({
+const index = new Router({
     mode: 'history',
     base: process.env.BASE_URL,
     routes
 });
 
-export default router;
+export default index;
