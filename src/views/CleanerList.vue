@@ -1,7 +1,11 @@
 <template>
     <div id="cleanerList">
         <CleanerListComponent v-bind:onlyTenMinutes="onlyTenMinutes" v-bind:userList="userList"></CleanerListComponent>
-        <el-button class="exit" type="danger" v-on:click="back">나가기</el-button>
+        <div id="buttonsContainer">
+            <img class="kakaoShareButton" src="kakaolink_btn_medium.png" v-on:click="share"/>
+            <el-button class="exit" type="danger" v-on:click="back">나가기</el-button>
+
+        </div>
     </div>
 </template>
 
@@ -23,6 +27,9 @@
         methods: {
             back() {
                 this.$emit("back");
+            },
+            share() {
+                alert("아직 준비되지 않았습니다.!");
             }
         },
         created() {
@@ -43,8 +50,16 @@
         width: 100%;
         text-align: center;
     }
-    .exit {
+    #buttonsContainer {
         margin-top: 2%;
-        width:96%;
+        display: flex;
+        margin-left: 2%
+    }
+    .exit {
+        width:84%;
+    }
+    .kakaoShareButton {
+        width: 12%;
+        margin-right: 2%;
     }
 </style>

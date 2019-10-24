@@ -48,18 +48,18 @@
             let cleanTime = new Date();
             let tenMinBeforeCleanTime = new Date();
             let endCleaningTime = new Date();
-            // let cleaningHour = 20;
-            // if(now.getHours() > 20) {
-            //     cleaningHour = 44;
-            // }
-            // let cleaningMinutes = 30;
-            // let cleaningSeconds = 0;
-            let cleaningHour = now.getHours();
-            let cleaningMinutes = now.getMinutes();
-            let cleaningSeconds = now.getSeconds() + 10;
+            let cleaningHour = 20;
+            if(now.getHours() > 20) {
+                cleaningHour = 44;
+            }
+            let cleaningMinutes = 30;
+            let cleaningSeconds = 0;
+            // let cleaningHour = now.getHours();
+            // let cleaningMinutes = now.getMinutes();
+            // let cleaningSeconds = now.getSeconds() + 10;
             cleanTime.setHours(cleaningHour, cleaningMinutes, cleaningSeconds);
-            tenMinBeforeCleanTime.setHours(cleaningHour, cleaningMinutes, cleaningSeconds - 5);
-            endCleaningTime.setHours(cleaningHour, cleaningMinutes, cleaningSeconds + 5);
+            tenMinBeforeCleanTime.setHours(cleaningHour, cleaningMinutes - 10, cleaningSeconds);
+            endCleaningTime.setHours(cleaningHour, cleaningMinutes + 30, cleaningSeconds);
 
             return {
                 tenMinRemaining: false,

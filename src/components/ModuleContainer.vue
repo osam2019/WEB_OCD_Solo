@@ -2,7 +2,7 @@
     <div id="moduleContainer">
         <div v-if="isMain" id="main">
             <Header v-bind:user="user" @exitRoom="exitRoom"></Header>
-            <Body v-bind:user="user" @tenMinRemaining="tenMinRemaining" @cleaningTimeEnd="cleaningTimeEnd"></Body>
+            <Body v-bind:user="user" @tenMinRemaining="tenMinRemaining" @cleaningTimeEnd="cleaningTimeEnd" @notCleaning="setArea" @cleaning="setArea"></Body>
             <Footer v-bind:user="user" v-bind:userList="userList" @editAreas="openEditAreas" @cleanerList="cleanerList"></Footer>
         </div>
         <div v-if="isAddRoom" id="addRoom">
@@ -113,6 +113,15 @@
             },
             cleaningTimeEnd() {
                 this.onlyTenMinutes = false;
+            },
+            setArea(value) {
+                alert("value: " + value);
+                this.user.todaysArea = value;
+                for(let i = 0 ; i < this.userList.length; i++) {
+                    if(this.user.userId === this.userList[i].userId) {
+                        this.userList[i].todaysArea = value;
+                    }
+                }
             }
 
         }

@@ -70,6 +70,5 @@
         height: 100%;
         margin: 1%;
         padding: 0.5%;
-        border: 1px solid #000000;
     }
 </style>

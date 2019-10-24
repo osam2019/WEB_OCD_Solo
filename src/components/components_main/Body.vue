@@ -15,7 +15,7 @@
             <el-radio class="cell" v-model="radio1" label="2" border size="medium" @change="toggleSelect">청소안해요
             </el-radio>
             <div class="cell emptydiv"></div>
-            <el-select v-if="showSelect" class="cell" v-model="value" placeholder="Select" size="medium">
+            <el-select v-if="showSelect" class="cell" v-model="value" placeholder="Select" size="medium" @change="changeTodaysArea">
                 <el-option
                         v-for="item in options"
                         :key="item.value"
@@ -55,6 +55,13 @@
                 showSelect: false
             }
         },
+        created() {
+           if(this.user.todaysArea === "출타" || this.user.todaysArea === "야근" || this.user.todaysArea === "당직근무") {
+               this.radio1 = '2';
+               this.value = this.user.todaysArea;
+               this.showSelect = true;
+           }
+        },
         methods: {
             tenMinLeft() {
                 this.tenMinRemaining = true;
@@ -70,6 +77,15 @@
             },
             toggleSelect() {
                 this.showSelect = !this.showSelect;
+                this.changeTodaysArea();
+            },
+            changeTodaysArea() {
+                if (this.radio1 === '2') {
+                    this.$emit('notCleaning', this.value);
+                } else {
+
+                    this.$emit('cleaning', '화장실'); // 일단 화장실로 설정
+                }
             }
         }
     }
@@ -90,7 +106,7 @@
 
     .cell {
         width: 47%;
-        margin: 0 1%     1% 0 !important;
+        margin: 0 1% 1% 0 !important;
 
     }
 
